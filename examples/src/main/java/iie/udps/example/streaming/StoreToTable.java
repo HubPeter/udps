@@ -15,9 +15,9 @@ import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
 import scala.Tuple2;
-import iie.common.hcatalog.SerHCatOutputFormat;
 import iie.udps.api.streaming.DStreamWithSchema;
 import iie.udps.api.streaming.StoreOp;
+import iie.udps.common.hcatalog.SerHCatOutputFormat;
 
 public class StoreToTable extends StoreOp {
 	private static final long serialVersionUID = -2935046443983163196L;

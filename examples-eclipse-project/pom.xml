@@ -9,21 +9,9 @@
 		<version>0.0.1</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>udps-examples-eclipse-project</artifactId>
-	<name>UDPS Examples Eclipse Project</name>
+	<artifactId>udps-eclipse-scala-project</artifactId>
+	<name>UDPS Examples Eclipse Project for Scala and Java</name>
 	<packaging>jar</packaging>
-
-	<properties>
-		<udps.sdk.name>udps-sdk-${project.version}.jar</udps.sdk.name>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>iie</groupId>
-			<artifactId>udps-sdk</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-	</dependencies>
 
 	<build>
 		<plugins>

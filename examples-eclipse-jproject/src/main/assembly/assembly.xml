@@ -22,29 +22,11 @@
 	<fileSets>
 		<fileSet>
 			<directory>
-				${project.parent.basedir}/
-			</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>README</include>
-			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>
 				${project.parent.basedir}/examples/src
 			</directory>
 			<outputDirectory>/src</outputDirectory>
 			<includes>
 				<include>**/*.java</include>
-			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>
-				${project.parent.basedir}/sdk/target
-			</directory>
-			<outputDirectory>/lib</outputDirectory>
-			<includes>
-				<include>${udps.sdk.name}</include>
 			</includes>
 		</fileSet>
 	</fileSets>

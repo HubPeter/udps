@@ -35,6 +35,13 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/udps-sdk-${udps.version}.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>iie</groupId>
+			<artifactId>udps-depends</artifactId>
+			<version>${udps.version}</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/udps-depends-${udps.version}.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>

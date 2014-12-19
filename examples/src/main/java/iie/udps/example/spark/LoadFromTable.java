@@ -1,8 +1,8 @@
 package iie.udps.example.spark;
 
-import iie.common.hcatalog.SerHCatInputFormat;
 import iie.udps.api.spark.LoadOp;
 import iie.udps.api.spark.RDDWithSchema;
+import iie.udps.common.hcatalog.SerHCatInputFormat;
 
 import java.io.IOException;
 

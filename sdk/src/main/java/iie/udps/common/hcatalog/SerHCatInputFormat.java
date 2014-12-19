@@ -1,4 +1,4 @@
-package iie.common.hcatalog;
+package iie.udps.common.hcatalog;
 
 import java.io.IOException;
 import java.util.List;

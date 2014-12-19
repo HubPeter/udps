@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/udps-sdk-0.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/udps-depends-0.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

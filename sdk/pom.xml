@@ -52,6 +52,13 @@
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
+					<createDependencyReducedPom>false</createDependencyReducedPom>
+					<finalName>udps-depends-${project.version}</finalName>
+					<artifactSet>
+						<excludes>
+							<exclude>iie:*</exclude>
+						</excludes>
+					</artifactSet>
 				</configuration>
 				<executions>
 					<execution>

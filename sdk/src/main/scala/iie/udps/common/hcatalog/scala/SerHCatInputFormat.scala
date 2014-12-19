@@ -1,4 +1,4 @@
-package iie.common.hcatalog.scala
+package iie.udps.common.hcatalog.scala
 
 import org.apache.hadoop.mapreduce.{ InputFormat, Job, JobContext, TaskAttemptContext, InputSplit, RecordReader }
 import org.apache.hadoop.io.NullWritable;

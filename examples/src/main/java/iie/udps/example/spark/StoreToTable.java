@@ -1,8 +1,8 @@
 package iie.udps.example.spark;
 
-import iie.common.hcatalog.SerHCatOutputFormat;
 import iie.udps.api.spark.RDDWithSchema;
 import iie.udps.api.spark.StoreOp;
+import iie.udps.common.hcatalog.SerHCatOutputFormat;
 
 import java.io.IOException;
 
