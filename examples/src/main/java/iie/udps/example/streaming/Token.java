@@ -74,7 +74,6 @@ public class Token extends TransformOp {
 					.map(new Function<SerializableWritable<HCatRecord>, SerializableWritable<HCatRecord>>() {
 						private static final long serialVersionUID = 5110377890285238705L;
 
-						@Override
 						public SerializableWritable<HCatRecord> call(
 								SerializableWritable<HCatRecord> record)
 								throws Exception {
