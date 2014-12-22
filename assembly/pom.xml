@@ -9,8 +9,14 @@
 		<version>0.0.1</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>udps-maven-java-jproject</artifactId>
-	<name>UDPS Examples Maven Project for Java</name>
+	<artifactId>udps-assembly</artifactId>
+	<name>UDPS Assembly</name>
+	<packaging>jar</packaging>
+
+	<properties>
+		<udps.sdk.name>udps-sdk-${project-version}.jar</udps.sdk.name>
+		<udps.depends.name>udps-depends-${project-version}.jar</udps.depends.name>
+	</properties>
 
 	<build>
 		<plugins>

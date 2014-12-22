@@ -41,9 +41,6 @@
 	<modules>
 		<module>sdk</module>
 		<module>examples</module>
-		<module>examples-eclipse-project</module>
-		<module>examples-maven-project</module>
-		<module>examples-eclipse-jproject</module>
-		<module>examples-maven-jproject</module>
+		<module>assembly</module>
 	</modules>
 </project>

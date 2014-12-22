@@ -1,6 +1,6 @@
-package iie.hadoop.spark.scala
+package iie.udps.example.spark.scala
 
-import iie.common.hcatalog.scala.{ SerHCatInputFormat, SerHCatOutputFormat }
+import iie.udps.common.hcatalog.scala.{ SerHCatInputFormat, SerHCatOutputFormat }
 import org.apache.hadoop.io.NullWritable
 import org.apache.hive.hcatalog.data.HCatRecord
 import org.apache.hadoop.mapred.JobConf
