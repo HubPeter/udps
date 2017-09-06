@@ -16,7 +16,7 @@ public abstract class StoreOp implements Serializable {
 	private static final long serialVersionUID = 6612375645495078109L;
 
 	/**
-	 * @param jsc
+	 * @param jssc
 	 * @param conf
 	 *            用户获取用户配置的参数，键值对方式，可参照Hadoop中Configure。
 	 *            在使用中，一般用于传递用户配置的目标表的模式及其表、目录等。

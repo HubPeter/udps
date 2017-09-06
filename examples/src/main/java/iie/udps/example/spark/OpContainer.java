@@ -28,7 +28,9 @@ public class OpContainer {
 
 	public static void main(String[] args) {
 
-		JavaSparkContext jsc = new JavaSparkContext(new SparkConf());
+		SparkConf sparkConf = new SparkConf();
+		sparkConf.setAppName("Tokener");
+		JavaSparkContext jsc = new JavaSparkContext(sparkConf);
 
 		// 实例化三个算子。
 		LoadOp loadOp = new LoadFromTable();
@@ -38,13 +40,13 @@ public class OpContainer {
 		// 算子进行串联执行。
 		// TODO: 根据程序参数，为每个算子设置不同配置。
 		Configuration conf1 = new Configuration();
-		conf1.set(LoadFromTable.DATABASE_NAME, "wx");
-		conf1.set(LoadFromTable.TABLE_NAME, "tbl_spark_in");
+		conf1.set(LoadFromTable.DATABASE_NAME, "udps");
+		conf1.set(LoadFromTable.TABLE_NAME, "tb_spark_in");
 		Configuration conf2 = new Configuration();
 		conf2.set(Token.TOKEN_COLUMNS, "col2");
 		Configuration conf3 = new Configuration();
-		conf3.set(StoreToTable.DATABASE_NAME, "wx");
-		conf3.set(StoreToTable.TABLE_NAME, "tbl_spark_out");
+		conf3.set(StoreToTable.DATABASE_NAME, "udps");
+		conf3.set(StoreToTable.TABLE_NAME, "tb_spark_out");
 
 		RDDWithSchema source = loadOp.load(jsc, conf1);
 		List<RDDWithSchema> results = transformOp.transform(jsc, conf2,

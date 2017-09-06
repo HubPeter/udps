@@ -59,7 +59,7 @@ public class Token extends TransformOp {
 			for (String tokenCol : tokenCols) {
 				HCatFieldSchema fieldSchema;
 				try {
-					fieldSchema = new HCatFieldSchema(tokenCol + ".token",
+					fieldSchema = new HCatFieldSchema(tokenCol + "_token",
 							Type.ARRAY, tokenSubSchema, "");
 					newSchema.append(fieldSchema);
 				} catch (HCatException e) {
