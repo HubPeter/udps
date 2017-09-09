@@ -4,5 +4,5 @@
     --master yarn-client \
     --executor-memory 2g --executor-cores 1 --num-executors 1 \
     --conf spark.serializer=org.apache.spark.serializer.JavaSerializer \
-    --jars udps-sdk-0.3-spark1.6.0-cdh5.8.0.jar \
+    --jars udps-sdk-0.3-spark1.6.0-cdh5.8.0.jar,/opt/cloudera/parcels/CDH/lib/hive-hcatalog/share/hcatalog/hive-hcatalog-core.jar \
     --class iie.udps.example.spark.OpContainer udps-examples-0.3-spark1.6.0-cdh5.8.0.jar

@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>iie</groupId>
 	<artifactId>udps</artifactId>
-	<version>0.3-spark1.6.0-cdh5.8.0</version>
+	<version>0.3-spark2.1.0-cdh5.8.0</version>
 	<name>UDPS</name>
 	<packaging>pom</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spark.version>1.6.0</spark.version>
+		<spark.version>2.1.0</spark.version>
 		<hive.version>1.1.0-cdh5.8.0</hive.version>
 		<junit.version>4.11</junit.version>
 	</properties>

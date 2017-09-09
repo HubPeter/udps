@@ -27,7 +27,7 @@ import com.google.common.collect.Lists;
  */
 public class OpContainer {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		JavaStreamingContext jssc = new JavaStreamingContext(
 				new SparkConf().setAppName("SparkStreamingOperatorTest"),
@@ -58,5 +58,4 @@ public class OpContainer {
 		jssc.start();
 		jssc.awaitTermination();
 	}
-
 }
